@@ -1,0 +1,18 @@
+body{
+	background-color: #6b6767;
+}
+p{
+
+	font-family:"Ink free", "MV Boli",sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration:underline wavy #57c9c4;
+	color:#b50778 ;
+	background-color: #61fa69;
+
+}
+h1{
+	font-family: 'Yellowtail',"Ink Free", cursive;
+	color:#a0fa05 ;
+}

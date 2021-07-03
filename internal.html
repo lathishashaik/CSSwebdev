@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+		<head>
+<!--TRY BELOW 1,2,3,4 BY KEEPING THEM IN style TAG-->
+			<!--1.TARGETTING INSTANCE OF A PARAGRAPH -->
+
+			<!--p{
+					background-color: #111111;
+					color:#05ed47;
+				}-->
+
+				
+			<!--2.TARGETTING STHG WITH A SPECIFIC ID -->
+
+			<!--#paragraph1{
+					background-color:#111111;
+					color:#02edd2;
+				}-->
+
+
+			<!--3.TARGETTING AN ENTIRE CLASS-->
+			<!--.top{
+					background-color: #111111;
+					color: #02edd2;
+				}-->
+
+
+				<!--4.WE CAN TARGET pargraph TAG THAT ALSO FALLS WITHIN  top CLASS-->
+				<!--p.top{
+					background-color: #111111;
+					color: #ed9d13;
+				}-->
+
+				<!--5.SUPPOSE WE WANT TO HAVE MULTIPLE HTML ELEMENTS(SAY h1,p TAGS) WITH SAME EXACT PROPS we can list all of them & seperate with a comma(,)
+				-->
+			<style >
+				h1,p{
+					background-color: #111111;
+					color:#b3f205;
+				}
+				
+
+			</style>
+		</head>
+		<body >
+			<!--HERE WE CAN CLEARLY 2ND H1 IS NOT AFFECTED BY STYLE BUT with help of internal CSS styling WE CAN TARGET ALL INSTANCES OF A CERTAIN TAG -->
+
+<!--  		<h1 style="background-color:#090d0b;color: #05ed47;">CSS Demo</h1>
+-->
+			<h1 class="top">CSS Demo</h1>
+			<p class="top" id="paragraph1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p id="paragraph2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</body>
+</html>
