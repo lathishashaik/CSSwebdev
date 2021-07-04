@@ -1,0 +1,9 @@
+/*HERE WE DON'T DO ANYTHING WITH p1, WE MAKE IT STDRD & APPLY ON p2*/
+p{
+	border: 1px solid;
+	widows: 200px;
+	background: red;
+	font-size: 85px;
+	text-align: center;
+	margin: 0px;
+}

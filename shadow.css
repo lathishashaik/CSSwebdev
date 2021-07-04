@@ -1,0 +1,29 @@
+h1{
+	border: 1px solid;
+	width: 200px;
+	padding: 25px;
+	/*text shadow HAS 4 FIELDS hrzntl(px) +ve =>twrds rt,-ve=>twrds lft
+								vrtcl(px) +ve =>down,-ve=>up
+								blur(px)
+								color(name/rgb/hex)*/
+
+	/*text-shadow:20px 20px 3px grey ;FOR THESE DIMENSIONS WE CAN CLEARLY OBSERVE THE TEXT SHADOW*/
+	text-shadow:5px 5px 3px #0eeb42 ;
+
+	/*IF WE SET BLUR TO 0PX & SET VERY SMALL DIMENSIONS IT CAN BE USED AS HIGHLIGHTER*/
+	/*text-shadow:2px 2px 0px #0eeb42 ;*/
+
+	/*WE CAN CREATE 2 SHADOWS SAY AT TOP AS BEFORE SHADOW IS BOTTOM*/
+	/*text-shadow:5px 5px 3px #0eeb42 , 0px -10px 5px #f51b1b;*/
+
+	/*THE ABOVE SHADOWS GIVES CLEAR VIEW OF HOW DIM WORK,FOR PRACTICAL PURPOSED BELOW DIMS WORKS BETTER*/
+	text-shadow:0px 0px 5px yellow , 0px -5px 5px red;
+
+	/*TO MAKE IT LOOK MORE BEAUTIFUL*/
+	background-color: #242323;
+	color: white;
+	border-color: black;
+
+	/*BOX SHADOW IS ~ TO TEXT SHADOW BUT ADDS SHADOW TO HTML ELE*/
+	box-shadow: 10px 10px 5px #666666;
+}

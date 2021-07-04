@@ -1,0 +1,37 @@
+p{
+	border-style: solid;
+	padding: 20px;
+	border-style: dotted;
+	border-style: dashed;
+	border-style: double;
+	/*ridge looks like shadow*/
+	border-style: ridge;
+	/*slightly darker than ridge*/
+	border-style: groove;
+	/*seems like 3D pushed button*/
+	border-style: inset;
+	/*seems like 3D pop out button*/
+	border-style:outset;
+	border-style: solid;
+	/*tells how fat the border is*/
+	border-width: 5px;
+	border-color: #4df77a;
+	/*to smoothen the sharp border edges*/
+	border-radius: 15px;
+}
+h1{
+	border-bottom-style: dotted;
+	border-top-style:dotted;
+	border-left-style: solid;
+	border-left-width: 10px;
+	border-right-style: solid;
+	border-right-width: 10px;
+	/*If we don't specify width the total hrzntl space(width) will be occupied*/
+	width: 200px;
+	border-color: white;
+	color: red;
+}
+body{
+	background-color: black;
+	color: white;
+}

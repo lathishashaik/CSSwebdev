@@ -1,0 +1,16 @@
+/*Instead of targetting body tag ..It's better to target html tag*/
+html{
+	background-color: green;
+	/*We can make color change i.e may be two colors at same time by using GRADIENT prop*/
+	background: linear-gradient(grey,black);
+	/*gradient IS EXTENDING ONLY AS FAR AS TEXT IS PRESENT SO AS ONE & REMAINIG AS SEPERATE ONE*/
+	/*TO MAKE GRADIEND AS ONE*/
+	background-repeat: no-repeat;
+	/*TO MAKE GRADIENT EXTEND WHOLE PAGE*/
+	/*WE'LL CLEARLY UNDERSTAND BELOW IN BACKGROUND IMAGES*/
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+
+}

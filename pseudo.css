@@ -1,0 +1,59 @@
+
+/*BYDEF COLOR OF hyperlink IF WE ALREADY CLICKED ON IT:violet
+													ELSE:blue
+HOWEVER WE CAN CHANGE THESE COLORS BY USING link,visited(PSUEDO CLS)
+IF WE USE ANY PSEUDO CLS THE SYNTAX IS  targert:PSname{} */
+
+a:link{
+	color:#78ffd0;
+}
+
+a:visited{
+	color:#d359ff
+}
+
+/*WHEN WE JUST HOVER(place cursor on say bttn) the prop applies*/
+button:hover{
+	background-color:#ff4529;
+	color:white;
+}
+
+/*HERE ACTIVE MEANS WHEN CLICKED ,say it goes darker than actual*/
+button:active{
+	background-color:#d13b24;
+}
+
+/*TARGETTING SPECIFIC LIST ITEM IN THE LIST*/
+li:first-child{
+	background-color:#93ff7d;
+}
+
+li:last-child{
+	background-color:#18f5f1;
+}
+
+li:nth-child(5){
+	background-color:#fbff00;
+}
+
+li:nth-child(odd){
+	background-color:#eb4dc1;
+}
+
+li:nth-child(even){
+	background-color:#4307f5;
+}
+
+/*CAN USE CUSTOM FORMULAE TO TARGET VERY SPECIFIC ITEM
+an+b 	a=>CYCLE SIZE(how many times to we want to repeat this)
+		n=>counter(starts from 0)
+		b=>offset var
+		*/
+/*Say we want evey third item from 2 onwards (if we don't want to specify from where onwards then we can keep b=0)*/
+
+li:nth-child(3n+2){
+	background:linear-gradient(to right,#a5f23f,#02c248);
+	/*MORE USEFUL PROPS*/
+	opacity:0.5;
+	border:1px solid;
+}

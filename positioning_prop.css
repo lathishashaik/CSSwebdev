@@ -1,0 +1,40 @@
+/*TO POSITION AN ELE AT SOME PLACE AT OUR WEBPAGE(fixed,relative,sticky,static,absolute)*/
+/*Fixed*/
+#f{
+	border: 1px solid;
+	width: 200px;
+	background: yellow;
+	position: fixed;
+	/*say BOTTOM RIGHT then move 0px from bottom & 0px from right*/
+	bottom: 0px;
+	right: 0px;
+}
+/*Relative:  RELATIVE TO IT'S NORMAL(CURRENT) POSITION*/
+#r{
+	border: 1px solid;
+	width: 200px;
+	background: yellow;
+	position: relative;
+	/*from current position bottom right will be applied*/
+	top: 10px;/*top means moves bottom ..right means moves left & VICEVERSA*/
+	right: 10px;
+}
+/*Sticky: to observe this we need scrollbar so add more paragrahs*/
+#s{
+	border: 1px solid;
+	width: 200px;
+	background: yellow;
+	position: sticky;
+	top: 0px;
+	/*THE h1 TAG REMAINS AT 0PX FROM TOP EVEN IF WE SCROLL*/
+}
+/*Static: def position for ele
+USE: IF WE EVER WANT TO RESET THE POSITION,WE CAN SET THEM TO STATIC SO THAT IT BEHAVES NORMALLY*/
+#st{
+	/*AS WE ARE h1 TAG AT THE BOTTOM OF PARAGRAPHS,WE'LL SEE IT THERE*/
+	border: 1px solid;
+	width: 200px;
+	background: yellow;
+	position: static;
+}
+

@@ -1,0 +1,27 @@
+/*It is also one of the POSITION prop*/
+/*THE BIG BOX box1 IS GNG TO B POSITIONED relatively & 
+	SMALL BOX box2 IS GNG TO B POSITIONED absolutely
+	HERE absolutelly means POSITION IS RELATIVE TO IT'S POSITIONED ANCESTORS & IF THERE IS NO ANCESTOR,
+												RELATIVE TO VIEWPORT*/
+#box1{
+	position: relative;
+	border: 1px solid;
+	width: 200px;
+	height: 200px;
+	top: 150px;
+	/*left: 150px;*/
+	background-color: lightgray;
+	/*TO MAKE box1 ALWAYS MIDDLE,COMMENT ABOVE left */
+	margin-left: auto;
+	margin-right: auto;
+}
+#box2{
+	position: absolute;
+	border: 1px solid;
+	width: 100px;
+	height: 100px;
+	background-color: gray;
+	top: 50px;
+	left: 50px;
+
+}

@@ -1,0 +1,21 @@
+/*TEXT ALIGNMENT*/
+#p1{
+	text-align: left;
+}
+
+#p2{
+	text-align: center;
+}
+
+#p3{
+	text-align: right;
+}
+/*BEFORE VIEWPORT IS CONTAINER BUT NOW EACH PARAGRAPH HAS IT'S OWN BORDER WHICH ACTS AS A CONTAINER*/
+
+p{
+	border: 1px solid;
+	width: 200px;
+}
+
+
+

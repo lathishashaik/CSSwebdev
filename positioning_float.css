@@ -1,0 +1,13 @@
+/*FLOAT PROPERTY=>AN ELE HAVING FLOAT PROP WILL'VE ALL OTHER ELE FLOATING AROUND IT*/
+/*SAY WE HAVE img & paragraph*/
+/*THE TEXT GENERALLY STARTS BELOW img AS img BYDEF OCCUPIES WHOLE WIDTH(hrzntl space)*/
+/*WE CHANGE THIS*/
+
+img{
+	float: left;/*img FLOATS TO LEFT & OTHER ELE WILL BE RIGHT*/
+	margin: 5px;
+}
+div{
+	border: 1px solid;
+	width: 500px;
+}

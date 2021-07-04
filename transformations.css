@@ -1,0 +1,49 @@
+/*HERE WE DON'T DO ANYTHING WITH p1, WE MAKE IT STDRD & APPLY ON p2*/
+p{
+	border: 1px solid;
+	width: 100px;
+	background: red;
+	font-size: 85px;
+	text-align: center;
+	margin: 0px;
+}
+/*TRANSLATE PROP*/
+/*hrntlly -X axis vrtclly Y-axis*/
+#p2{
+	/*transform:translateX(50px) ;
+	transform:translateY(50px) ;*/
+	/*IF WE translate INDIVIDUALLY IT SHOWS US THE LATEST transltion ALONE,BUT IF WE USE COMBINAION 
+	IT GIVES REQUIRED OUTPUT*/
+
+	/*COMBINATION OF ABOVE 2*/
+	transform: translate(50px,50px);
+}
+
+/*ROTATE PROP*/
+#p2{
+	transform: rotateX(180deg);/*rotates text upside down*/
+	transform: rotateY(180deg);/*Inverted(letter order & style will be  reversed)*/
+	transform: rotateZ(180deg);/*strd rotation like rotation for 2D plane*/
+}
+
+/*SCALING PROP*/
+#p2{
+	transform: scaleX(2);/*~ to stretching on X axis if value is 0.5=>skinny
+																1=>original , 2=> buldges hrztlly	*/
+	transform: scaleY(2);/*~ to stretching on Y axis if value is 0.5=>skinny
+																1=>original , 2=> buldges vrtlly	*/
+
+}	
+
+/*SKEW PROP*/
+#p2{
+	transform: skewY(45deg);
+	transform: skewX(45deg);
+}
+
+
+/*MATRIX PROP takes 6 fields*/
+#p2{
+	/*HERE WE ARE PERFORMING 6 DIFFERENT OPERATIONS ALL AT ONCE*/
+	transform: matrix(0.5,1,1,0.5, 50, 50);
+}

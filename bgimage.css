@@ -1,0 +1,27 @@
+/*if we move scroll bar , bgimage stay still ..it's like 2 layers which is kind of fun */
+html{
+	background-image: url("image.png");
+	/*IF THE IMG IS SMALL IT'S GETTING REPEATED SO AS TO FILL THE BACKGROUND*/
+	background-repeat: no-repeat;
+	/*IF WE DON'T WANT IMG TO BE REPEATED BUT STILL WHOLE VIEWPORT TO BE OCCUPIED*/
+	/*1.PLACES IMG IN CENTER*/
+	background-position: center;
+	/*2.TO COVER FULL WIDTH OF VIEWPORT*/
+	background-size: cover;
+	/*3.*/
+	background-attachment: fixed;
+}
+h1{
+	width:400px;
+	background: linear-gradient(red,orange,yellow);
+}
+/*p{
+	background: linear-gradient(#abf7e4,#0af5ba);
+	color:#eb0ee7;
+	if there are 2 paragraphs colors are coming seperatly so use div tag
+}*/
+#mytext{
+	/*if there are 2 paragraphs colors are coming seperatly so use div tag*/
+	background: linear-gradient(#abf7e4,#0af5ba);
+	color:#eb0ee7;
+}
