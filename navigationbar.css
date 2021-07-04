@@ -1,0 +1,32 @@
+ul{
+	/*TO REMOVE DOTS OF EACH LIST ITEM*/
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	background-color: #444444;
+
+}
+/*TARGETTING li HAVING a TAG*/
+li a{
+	float: left;/*all items will be arranged hrzntlly with no space btw them*/
+	display: block;
+	color: white;
+	padding: 10px 15px;	
+	text-decoration:none ;/*TO REMOVE UNDERLINES*/
+	/*ADDING BORDERS TO MAKE THEM LOOK LIKE BLOCKS*/
+	border: 1px solid black;
+	/*TO MAKE ALL BLOK SIZES EVEN*/
+	min-width: 60px;
+	text-align: center;
+}
+li a:hover{
+	background-color: #222222;/*Dark black*/
+	animation: myGlowAnimation;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+/*ADDITONAL FOR MAKING APPERANCE MORE BEAUTIFUL: text glowing*/
+@keyframes myGlowAnimation{
+	50%{text-shadow: 0px 0px 10px yellow;}
+}

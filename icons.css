@@ -1,0 +1,13 @@
+/*WE CAN INDIVIDUALLY STYLE THESE ICONS USING CSS*/
+/*say change color of youtube icon...so target it's cls(fa)*/
+.fa-youtube{
+	color: red;
+}
+.fa-twitter{
+	color: #1DA1F2;
+}
+/*WE CHANGE THESE ICONS INTO HYPERLINKS WHICH TAKES SOMEWHERE WHEN WE CLICK ON IT*/
+/*getting rid of hyperlink underline*/
+a{
+	text-decoration: none;
+}

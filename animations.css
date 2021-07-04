@@ -1,0 +1,81 @@
+/*IF WE SPECIFY SAME PERCENTAGES MULTIPLE TIMES,THE MOST RECENT WILL BE EXECUTED
+ELSE i.e DIFFERENT PERCENTAGES ALL THE MENTIONED WILL BE EXECUTED*/
+#p1{
+	border: 1px solid;
+	width: 200px;
+	height: 200px;
+	margin: 0px;
+	background: red;
+	font-size: 150px;
+	text-align: center;
+
+	/*FOR ANIMATION TO WORK*/
+	/*animation: myColorAnimation;
+	animation:myRotateAnimation;
+	animation: myTranslateAnimation;
+	animation: myScalingAnimation;
+	animation: myOpacityAnimation;
+	animation: myFontAnimation;
+	animation-duration: 5s;
+	/*animation SHOWS FOR SPECIFIED NO: OF TIMES BELOW*/
+	/*animation-iteration-count: infinite;*/
+}
+/*Color Animation*/
+@keyframes myColorAnimation{
+	/*from{background-color: red;}
+	to{background-color: blue;}*/
+
+	0%{background-color: red;}
+	20%{background-color: orange;}
+	40%{background-color: yellow;}
+	60%{background-color:green;}
+	80%{background-color: blue;}
+	100%{background-color: purple;}
+}
+/*Rotate Animation*/
+@keyframes myRotateAnimation{
+	100%{transform: rotateZ(360deg);}/*here 50% means 360 deg both clockwise & anti-cw but 100% means 
+	only clockwise*/
+	100%{transform: rotateX(360deg);}
+	100%{transform: rotateY(360deg);}	/* means rotate by specified angle & come to original
+	position */
+}
+
+/*translate Animation*/
+@keyframes myTranslateAnimation{
+	/*						to right,downwards*/
+	50%{transform: translate(100px,0);}
+	50%{transform: translate(0,100px);}
+	50%{transform: translate(100px,100px);}/*MOVES DIAGONALLY*/
+
+}
+
+/*Scaling Animation*/
+@keyframes myScalingAnimation{
+	/*BULDGES 3 TIMES THE ORIGINAL ON X-AXIS & 2 TIMES ON Y-AXIS*/
+	/*50%{transform:scale(3,2);}*/
+	100%{transform:scale(0.5,0.5);}/*SHRINKS & & come to original
+	size by blinking*/
+}
+
+/*OPACITY ANIMATION*/
+@keyframes myOpacityAnimation{
+	0%{opacity: 0;}
+	50%{ opacity:1;}
+	100%{opacity: 0;}
+}
+
+/*Font Animation*/
+@keyframes myFontAnimation{
+	
+	0%{font-size:150px;}/*original font size*/
+	50%{font-size:400px;}
+	100%{font-size: 150px;}/*original font size*/
+}
+
+/*WE CAN ACTUALLY HAVE AN ANIMATION BEGIN WHWN WE hover ON A ELE......FOR THIS ALL ANIMATION PART IN
+																		#p1 IS COMMENTED*/
+#p1:hover{
+	animation: myFontAnimation;
+	animation-duration: 5s;
+}

@@ -1,0 +1,45 @@
+.container div{
+	color: white;
+	height: 100px;
+	width: 100px;
+	border: 1px solid;
+	background-color: #999999;
+	text-align: center;
+	font-size: 50px;
+	line-height: 100px;/*makes all text down for a bit*/
+	margin: 5px;
+
+}
+/*TO PLACE ELE IN THE CONTAINER*/
+.container{
+	display: flex;/*MAKES HRZTNL*/
+	flex-wrap: nowrap;/*Shrinks when resized*/
+	background-color: #444444;
+	flex-wrap: wrap;/*THIS AVOIDS SHRINKING WHEN WEB PAGE IS RESIZED*/
+	/*PROPS OF FLEX BOX*/
+	
+	/*1.OCCUPIES WHOLE WIDTH..TO AVOID THIS
+	flex-direction: column;
+	width:113px;*/
+
+	/*CAN MAKE NEWLY ADDED ELE TO APPEAR ON WHEN ARRANGED VRTCLLY eg: FB POSTS
+	flex-direction: column-reverse;*/
+
+	/*2.*/
+	justify-content: flex-start;/*THIS IS BYDEF....even if we resize all list ele will get to start*/
+	justify-content: center;/*even if we resize all list ele will get to middle*/
+	justify-content: flex-end;/*even if we resize all list ele will get to end*/
+	justify-content: space-around;/*ANY EXTRA SPACE IS APPEARED BTW LIST ITEMS*/
+
+	/*3.If we increase the height of the container then bydef all list items go to top*/
+	height: 400px;
+	align-items: flex-start;/*BYDEF*/
+	align-items:flex-end;/*It makes the items to align at the end of container*/
+	align-items: center;/*It makes the items to align at the center of container*/
+
+	/*If we want to align any item say listitem #1 ..IT CAN BE DONE EASILY BY FOLLOWING 2 STEPS
+	USING FLEXBOX
+	justify-content: center;
+	align-items: center*//*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+}	
